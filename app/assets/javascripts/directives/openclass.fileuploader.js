@@ -35,8 +35,12 @@ angular.module('openClass.directives')
       }
 
       function uploadCompleteHandler(uploader, fileArray) {
+<<<<<<< HEAD
         var fileType = title === defaultTitle ? 'images' : 'scratches';
         scope.$emit('upload', 'complete', fileType);
+=======
+        scope.$emit('upload', 'complete');
+>>>>>>> 85d9c3f19c8ca4bd5bf606d3f5dba1f96695976c
         setTimeout(function(){
           fileList.fadeOut();
         }, 2000);
@@ -47,8 +51,12 @@ angular.module('openClass.directives')
       }
 
       var extensions = tAttrs.extensions || "jpg,jpeg,gif,png";
+<<<<<<< HEAD
       var defaultTitle = "Image files";
       var title = tAttrs.title || defaultTitle;
+=======
+      var title = tAttrs.title || "Image files";
+>>>>>>> 85d9c3f19c8ca4bd5bf606d3f5dba1f96695976c
 
       var uploader = new pluploader.Uploader({
         runtimes: 'flash',

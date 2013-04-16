@@ -1,12 +1,18 @@
 <article class="main">
+<<<<<<< HEAD
   <h1>新的课堂，你来设计</h1>
   <small class="slogan">新的课堂是设计和实践体验式教学的平台</small>
+=======
+  <h2>新的课堂，你来设计</h2>
+  <small class="slogan">开放课堂是设计和实践综合实践课的平台</small>
+>>>>>>> 85d9c3f19c8ca4bd5bf606d3f5dba1f96695976c
   <p>
     <a class="btn btn-primary" href="<%= new_lessonplan_path() %>">创建教案</a>
   </p>
   <section class="description">
     <ul class="description">
       <li class="age">
+<<<<<<< HEAD
         <b>体验式教学</b>
         <small>面向小学4年级到初中2年级的各学科</small>
       </li>
@@ -21,13 +27,33 @@
       <li class="feedback">
         <b>分享授课成果</b>
         <small>看看各地孩子有什么不同作品</small>
+=======
+        <b>综合实践课</b>
+        <small>面向小学4年级到初中2年级的综合实践课</small>
+      </li>
+      <li class="design">
+        <b>汇聚教案案例</b>
+        <small><%= Lessonplan.all.length %>门充满互动和创意的综合实践课</small>
+      </li>
+      <li class="classroom">
+        <b>各地老师互动协作</b>
+        <small>和全国200位综合实践课老师协作和学习</small>
+      </li>
+      <li class="feedback">
+        <b>分享授课结果</b>
+        <small>看看各地孩子有什么不同结果</small>
+>>>>>>> 85d9c3f19c8ca4bd5bf606d3f5dba1f96695976c
       </li>
     </ul>
   </section>
   <section class="example">
     <h3>我们的课</h3>
     <ul>
+<<<<<<< HEAD
       <% Lessonplan.ordered_lessonplans.each do |lessonplan| %>
+=======
+      <% Lessonplan.all.reverse.each_with_index do |lessonplan, idx| %>
+>>>>>>> 85d9c3f19c8ca4bd5bf606d3f5dba1f96695976c
         <li>
           <a href="<%= lessonplan_path(lessonplan.id) %>"><b class="title"><%= lessonplan.title %></b></a>
           <p class="description"><%= lessonplan.short_description.html_safe %></p>
@@ -36,5 +62,15 @@
       <% end %>
     </ul>
   </section>
+<<<<<<< HEAD
+=======
+<!--  <section class="application">
+    <h3>申请内测</h3>
+    <form>
+      <input type="text" placeholder="请输入您的邮箱">
+      <input type="submit" value="申请">
+    </form>
+  </section> -->
+>>>>>>> 85d9c3f19c8ca4bd5bf606d3f5dba1f96695976c
 </article>
     

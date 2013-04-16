@@ -62,5 +62,8 @@ A huge thanks goes out to our many [contributors](https://github.com/twers/re-ed
 ## License
 
 Distributed under the [MIT license](http://rem.mit-license.org)
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 85d9c3f19c8ca4bd5bf606d3f5dba1f96695976c

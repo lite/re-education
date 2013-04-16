@@ -6,6 +6,7 @@
 
 #profile{
 
+<<<<<<< HEAD
   $left-space-width: 150px;
 
   label{
@@ -22,15 +23,38 @@
   .btn.btn-primary{
     margin-left: $left-space-width + 40 !important;
   }
+=======
+	$left-space-width: 150px;
+
+	label{
+		display: inline-block;
+		font-size: 1.1em;
+		width: $left-space-width;
+		color: #999;
+		margin-right: 20px;
+		margin-left: 20px;
+		text-align: left;
+		vertical-align: top;
+	}
+
+	.btn.btn-primary{
+		margin-left: $left-space-width + 40 !important;
+	}
+>>>>>>> 85d9c3f19c8ca4bd5bf606d3f5dba1f96695976c
 
 }
 
 ul.teaser-list, ul.teaser-list li{
+<<<<<<< HEAD
   list-style: none;
+=======
+	list-style: none;
+>>>>>>> 85d9c3f19c8ca4bd5bf606d3f5dba1f96695976c
 }
 
 ul.teaser-list{
 
+<<<<<<< HEAD
   border-top: 1px solid #eee;
 
   h4 a{
@@ -53,4 +77,28 @@ ul.teaser-list{
     right: 20px;
     top: 10px;
   }
+=======
+	border-top: 1px solid #eee;
+
+	h4 a{
+		line-height: 20px
+	}
+
+	li{
+		border-bottom: 1px solid #eee;
+		padding: 10px 100px 10px 20px;
+		position: relative;
+	}
+
+	p{
+		color: #999;
+		padding: 0;
+	}
+
+	.enter{
+		position: absolute;
+		right: 20px;
+		top: 10px;
+	}
+>>>>>>> 85d9c3f19c8ca4bd5bf606d3f5dba1f96695976c
 }

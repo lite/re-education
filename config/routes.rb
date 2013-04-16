@@ -4,9 +4,14 @@ ReEducation::Application.routes.draw do
 
   match 'login' => 'sessions#new', :as => 'login', :via => :get
   match 'logout' => 'sessions#destroy', :as => 'logout', :via => :get
+<<<<<<< HEAD
   match 'about-us' => 'site#about', :as => 'about_us', :via => :get
 
   resources :sessions, :only => [:create]
+=======
+
+  resources :sessions, :only => [:new, :create]
+>>>>>>> 85d9c3f19c8ca4bd5bf606d3f5dba1f96695976c
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -21,6 +26,7 @@ ReEducation::Application.routes.draw do
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
   resources :lessonplans do
+<<<<<<< HEAD
     resources :tasks, :only => [:index, :create]
     resources :comments, :only => [:index, :create, :destroy]
     resources :lessonplan_attachments, :as => 'attachments', :path => 'attachments', :only => [:index, :create, :destroy] do
@@ -32,6 +38,17 @@ ReEducation::Application.routes.draw do
   resources :users
   resources :feedbacks, :only => [:new, :create]
 
+=======
+    resources :tasks
+    resources :comments
+    resources :lessonplan_attachments, :as => 'attachments', :path => 'attachments'
+  end
+
+  resources :publishers
+  resources :users
+  resources :feedbacks
+  
+>>>>>>> 85d9c3f19c8ca4bd5bf606d3f5dba1f96695976c
   # Sample resource route with options:
   #   resources :products do
   #     member do

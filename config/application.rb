@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 # -*- coding: utf-8 -*-
+=======
+>>>>>>> 85d9c3f19c8ca4bd5bf606d3f5dba1f96695976c
 require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
@@ -81,10 +84,13 @@ module ReEducation
       :host => "myopenclass.herokuapp.com"
     }
 
+<<<<<<< HEAD
     config.session_store :active_record_store, {
       :expire_after => 24.hours
     }
 
+=======
+>>>>>>> 85d9c3f19c8ca4bd5bf606d3f5dba1f96695976c
     config.generators do |g|
       g.stylesheets false
       g.test_framework :rspec
@@ -92,6 +98,9 @@ module ReEducation
       g.helper false
     end
 
+<<<<<<< HEAD
     config.lessonplan_title_filters = ["有故事的积木", "春天的自然日记", "春天的天气和节气", "画画我们身边的“年味”", "面具Party", "ｓｃｒａｔｃｈ——快乐的小猫", "文字配图写日记", "DIY明信片", "制作小相框", "叶子贴画"]
+=======
+>>>>>>> 85d9c3f19c8ca4bd5bf606d3f5dba1f96695976c
   end
 end

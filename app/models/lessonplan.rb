@@ -16,7 +16,11 @@
 
 class Lessonplan < ActiveRecord::Base
   has_many :tasks, :dependent => :delete_all
+<<<<<<< HEAD
   has_many :comments, :as => :commentable, :dependent => :delete_all
+=======
+  has_many :comments, :dependent => :delete_all
+>>>>>>> 85d9c3f19c8ca4bd5bf606d3f5dba1f96695976c
   has_many :lessonplan_attachments, :dependent => :delete_all
 
   belongs_to :publisher
@@ -33,8 +37,14 @@ class Lessonplan < ActiveRecord::Base
 
   def attachments(extensions)
     ret = []
+<<<<<<< HEAD
     self.lessonplan_attachments.order('created_at DESC').each do |attachment|
       ret.push attachment if attachment.name && extensions.include?(attachment.name.split('.').last.downcase)
+=======
+    p self.lessonplan_attachments
+    self.lessonplan_attachments.order('created_at DESC').each do |attachment|
+      ret.push attachment if extensions.include? attachment.name.split('.').last.downcase
+>>>>>>> 85d9c3f19c8ca4bd5bf606d3f5dba1f96695976c
     end
     ret
   end
@@ -60,6 +70,7 @@ class Lessonplan < ActiveRecord::Base
     tasks.each { |task| self.tasks.create! task } if tasks.present?
   end
 
+<<<<<<< HEAD
   def self.ordered_lessonplans
     title_filters = ReEducation::Application.config.lessonplan_title_filters.reverse
     ordered_lessonplans = Lessonplan.all.reverse
@@ -71,4 +82,6 @@ class Lessonplan < ActiveRecord::Base
     ordered_lessonplans
   end
 
+=======
+>>>>>>> 85d9c3f19c8ca4bd5bf606d3f5dba1f96695976c
 end

@@ -3,7 +3,11 @@
 class AvatarUploader < CarrierWave::Uploader::Base
 
   # Include RMagick or MiniMagick support:
+<<<<<<< HEAD
   include CarrierWave::RMagick
+=======
+  # include CarrierWave::RMagick
+>>>>>>> 85d9c3f19c8ca4bd5bf606d3f5dba1f96695976c
   # include CarrierWave::MiniMagick
 
   # Include the Sprockets helpers for Rails 3.1+ asset pipeline compatibility:
@@ -36,9 +40,15 @@ class AvatarUploader < CarrierWave::Uploader::Base
   # end
 
   # Create different versions of your uploaded files:
+<<<<<<< HEAD
    version :thumb do
      process :resize_to_limit => [56, 56]
    end
+=======
+  # version :thumb do
+  #   process :scale => [50, 50]
+  # end
+>>>>>>> 85d9c3f19c8ca4bd5bf606d3f5dba1f96695976c
 
   # Add a white list of extensions which are allowed to be uploaded.
   # For images you might use something like this:

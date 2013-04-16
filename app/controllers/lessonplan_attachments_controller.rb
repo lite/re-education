@@ -22,6 +22,7 @@ class LessonplanAttachmentsController < ApplicationController
   end
 
   def create
+<<<<<<< HEAD
     attachment = LessonplanAttachment.new params[:lessonplan_attachment]
     attachment.lessonplan = @lessonplan
     attachment.name = params[:name]
@@ -31,6 +32,14 @@ class LessonplanAttachmentsController < ApplicationController
       render :json => {status: 'some going wrong!'}
     end
 
+=======
+  	attachment = LessonplanAttachment.new params[:lessonplan_attachment]
+  	attachment.lessonplan = @lessonplan
+    attachment.name = params[:name]
+  	attachment.save
+
+  	redirect_to lessonplan_attachments_path(@lessonplan)
+>>>>>>> 85d9c3f19c8ca4bd5bf606d3f5dba1f96695976c
   end
 
   def destroy

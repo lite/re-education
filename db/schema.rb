@@ -11,6 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(:version => 20130225085952) do
 
   create_table "attachment_comments", :force => true do |t|
@@ -20,6 +21,9 @@ ActiveRecord::Schema.define(:version => 20130225085952) do
     t.datetime "created_at",               :null => false
     t.datetime "updated_at",               :null => false
   end
+=======
+ActiveRecord::Schema.define(:version => 20130218072047) do
+>>>>>>> 85d9c3f19c8ca4bd5bf606d3f5dba1f96695976c
 
   create_table "ckeditor_assets", :force => true do |t|
     t.string   "data_file_name",                  :null => false
@@ -40,11 +44,18 @@ ActiveRecord::Schema.define(:version => 20130225085952) do
   create_table "comments", :force => true do |t|
     t.text     "content"
     t.integer  "user_id"
+<<<<<<< HEAD
     t.datetime "created_at",                     :null => false
     t.datetime "updated_at",                     :null => false
     t.integer  "publisher_id"
     t.integer  "commentable_id"
     t.string   "commentable_type", :limit => 20
+=======
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+    t.integer  "lessonplan_id"
+    t.integer  "publisher_id"
+>>>>>>> 85d9c3f19c8ca4bd5bf606d3f5dba1f96695976c
   end
 
   create_table "feedbacks", :force => true do |t|

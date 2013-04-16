@@ -22,7 +22,11 @@ describe "login and logout process", type: :feautre do
       fill_in 'Email', with: user.email
       fill_in 'publisher_password', with: 'xmanxman'
       click_button '登录'
+<<<<<<< HEAD
       page.should have_content "账号或密码错误"
+=======
+      page.should_not have_content "个人信息"
+>>>>>>> 85d9c3f19c8ca4bd5bf606d3f5dba1f96695976c
     end
 
   end

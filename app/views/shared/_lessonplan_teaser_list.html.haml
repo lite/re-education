@@ -1,7 +1,16 @@
 %ul.teaser-list
+<<<<<<< HEAD
   - lessonplans.reverse.each do |lessonplan|
     %li 
       %h4 
         %a{ :href => "#{lessonplan_path(lessonplan)}"}= lessonplan.title
       %p= lessonplan.short_description
       %a.enter{ :href => "#{lessonplan_path(lessonplan)}" } 进入
+=======
+	- lessonplans.reverse.each do |lessonplan|
+		%li 
+			%h4 
+				%a{ :href => "#{lessonplan_path(lessonplan)}"}= lessonplan.title
+			%p= lessonplan.short_description
+			%a.enter{ :href => "#{lessonplan_path(lessonplan)}" } 进入
+>>>>>>> 85d9c3f19c8ca4bd5bf606d3f5dba1f96695976c

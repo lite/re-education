@@ -19,6 +19,10 @@ angular.module('openClass.models')
           }
         }
       });
+<<<<<<< HEAD
     };
+=======
+    }
+>>>>>>> 85d9c3f19c8ca4bd5bf606d3f5dba1f96695976c
     return AttachmentResource;
   }]);

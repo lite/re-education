@@ -1,5 +1,9 @@
 GEM
+<<<<<<< HEAD
   remote: http://rubygems.org/
+=======
+  remote: http://ruby.taobao.org/
+>>>>>>> 85d9c3f19c8ca4bd5bf606d3f5dba1f96695976c
   specs:
     actionmailer (3.2.12)
       actionpack (= 3.2.12)
@@ -40,12 +44,15 @@ GEM
       mocha (= 0.10.5)
     builder (3.0.4)
     cancan (1.6.9)
+<<<<<<< HEAD
     capistrano (2.14.2)
       highline
       net-scp (>= 1.0.0)
       net-sftp (>= 2.0.0)
       net-ssh (>= 2.0.14)
       net-ssh-gateway (>= 1.1.0)
+=======
+>>>>>>> 85d9c3f19c8ca4bd5bf606d3f5dba1f96695976c
     capybara (2.0.2)
       mime-types (>= 1.16)
       nokogiri (>= 1.3.3)
@@ -112,8 +119,11 @@ GEM
     factory_girl_rails (4.1.0)
       factory_girl (~> 4.1.0)
       railties (>= 3.0.0)
+<<<<<<< HEAD
     fancybox2-rails (0.2.4)
       railties (>= 3.1.0)
+=======
+>>>>>>> 85d9c3f19c8ca4bd5bf606d3f5dba1f96695976c
     ffi (1.3.1)
     fssm (0.2.10)
     galetahub-simple_captcha (0.1.3)
@@ -139,7 +149,11 @@ GEM
       selenium-webdriver (>= 0.1.3)
     jasmine-core (1.3.1)
     journey (1.0.4)
+<<<<<<< HEAD
     jquery-rails (2.1.4)
+=======
+    jquery-rails (2.2.1)
+>>>>>>> 85d9c3f19c8ca4bd5bf606d3f5dba1f96695976c
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
     json (1.7.7)
@@ -160,6 +174,7 @@ GEM
     multi_json (1.6.0)
     multi_xml (0.5.3)
     mysql2 (0.3.11)
+<<<<<<< HEAD
     net-scp (1.1.0)
       net-ssh (>= 2.6.5)
     net-sftp (2.1.1)
@@ -167,6 +182,8 @@ GEM
     net-ssh (2.6.6)
     net-ssh-gateway (1.2.0)
       net-ssh (>= 2.6.5)
+=======
+>>>>>>> 85d9c3f19c8ca4bd5bf606d3f5dba1f96695976c
     nokogiri (1.5.6)
     orm_adapter (0.4.0)
     paperclip (3.4.0)
@@ -232,8 +249,11 @@ GEM
     ruby-prof (0.12.2)
     ruby-progressbar (1.0.2)
     rubyzip (0.9.9)
+<<<<<<< HEAD
     rvm-capistrano (1.2.7)
       capistrano (>= 2.0.0)
+=======
+>>>>>>> 85d9c3f19c8ca4bd5bf606d3f5dba1f96695976c
     sass (3.2.5)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
@@ -289,7 +309,10 @@ DEPENDENCIES
   angular-rails (~> 0.0.12)
   annotate (~> 2.5.0)
   cancan
+<<<<<<< HEAD
   capistrano
+=======
+>>>>>>> 85d9c3f19c8ca4bd5bf606d3f5dba1f96695976c
   capybara
   capybara-webkit
   carrierwave
@@ -304,13 +327,20 @@ DEPENDENCIES
   debugger
   dynamic_form
   factory_girl_rails (~> 4.1.0)
+<<<<<<< HEAD
   fancybox2-rails (~> 0.2.4)
+=======
+>>>>>>> 85d9c3f19c8ca4bd5bf606d3f5dba1f96695976c
   galetahub-simple_captcha
   gizmo
   haml
   headless
   jasmine (~> 1.3.1)
+<<<<<<< HEAD
   jquery-rails (= 2.1.4)
+=======
+  jquery-rails
+>>>>>>> 85d9c3f19c8ca4bd5bf606d3f5dba1f96695976c
   launchy
   mailhopper
   mysql2
@@ -319,11 +349,17 @@ DEPENDENCIES
   rails (~> 3.2.2)
   rails_best_practices
   rails_kindeditor (~> 0.3.8)
+<<<<<<< HEAD
   rake
   rmagick
   rspec-rails (~> 2.12.0)
   ruby-prof
   rvm-capistrano
+=======
+  rmagick
+  rspec-rails (~> 2.12.0)
+  ruby-prof
+>>>>>>> 85d9c3f19c8ca4bd5bf606d3f5dba1f96695976c
   sass-rails (~> 3.2.3)
   shoulda-matchers (~> 1.4.2)
   simplecov

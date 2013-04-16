@@ -46,8 +46,12 @@
               %input.task-item-title{ :value => '{{task.title}}', :type => 'text' }
               %label 详细内容
               %small.help-info 每一步如何做，才能完成作品...
+<<<<<<< HEAD
               %textarea.simple-editor.task-item-content{ :rows => 3, :maxlength => 1000, 'ng-init' => 'simpleEditor($index)' }
                 {{task.content}}
+=======
+              %textarea.simple-editor.task-item-content{ :rows => 3, :maxlength => 1000, :value => '{{task.content}}', 'ng-init' => 'simpleEditor($index)' }
+>>>>>>> 85d9c3f19c8ca4bd5bf606d3f5dba1f96695976c
               %p
                 %a.save.plan-action{ :href=> "javascript:;", 'ng-click' => 'saveTask($index)' } 保存
                 %a.cancel.plan-action{ :href => 'javascript:;', 'ng-click' => 'resetTask($index)' } 取消

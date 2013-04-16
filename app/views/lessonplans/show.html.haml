@@ -6,7 +6,11 @@
       %a{ :href => "javascript:;" } 案例
     %li.active
       %a{ :href => "javascript:;" } 精品
+<<<<<<< HEAD
 
+=======
+      
+>>>>>>> 85d9c3f19c8ca4bd5bf606d3f5dba1f96695976c
 %article.plan{ 'ng-controller' => "PlanController" }
   -if can? :update, @lessonplan or can? :destroy, @lessonplan
     %p.page-action
@@ -20,7 +24,11 @@
   = render :partial => "shared/lessonplan_items", :locals => { :lessonplan => @lessonplan }
 
   %section.activity
+<<<<<<< HEAD
     %img.main{ :src => @lessonplan.attachment.thumb.url, :alt => @lessonplan.title }
+=======
+    %img.main{ :src => @lessonplan.attachment_url, :alt => @lessonplan.title }
+>>>>>>> 85d9c3f19c8ca4bd5bf606d3f5dba1f96695976c
     %p.description= @lessonplan.short_description.html_safe
     %h3 活动介绍
     = @lessonplan.content.html_safe
@@ -59,7 +67,11 @@
         .comment.clearfix
           = form_for :comment, :url => lessonplan_comments_url(@lessonplan), :html => { 'ng-submit' => 'submitForm()' } do |f|
             = f.text_area :content, :placeholder => "评论一下这个教案...", :rows => 5, 'ng-model' => 'new_comment_content'
+<<<<<<< HEAD
             = f.submit '评论', :class => 'btn btn-primary'
+=======
+            = f.submit '提交评论', :class => 'btn btn-primary'
+>>>>>>> 85d9c3f19c8ca4bd5bf606d3f5dba1f96695976c
 
   
             

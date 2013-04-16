@@ -12,3 +12,29 @@
 #
 
 require 'spec_helper'
+<<<<<<< HEAD
+=======
+
+describe Comment do
+
+  describe 'valid' do
+
+    let(:publisher) { FactoryGirl.create :publisher }
+    let(:lessonplan) { FactoryGirl.create :lessonplan, publisher: publisher }
+
+    specify { Comment.new().should_not be_valid }
+
+    specify do 
+      comment = Comment.new(lessonplan: lessonplan, publisher: publisher, content: '   ')
+      comment.should_not be_valid
+    end
+
+    specify { Comment.new(lessonplan: lessonplan, publisher: publisher, content: 'text content').should be_valid }
+
+
+
+  end
+
+
+end
+>>>>>>> 85d9c3f19c8ca4bd5bf606d3f5dba1f96695976c
